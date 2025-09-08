@@ -1,4 +1,14 @@
 const cart = [];
+
+const manageSpiner = (status) => {
+  if (status == true) {
+    document.getElementById("spinner").classList.remove("hidden");
+    document.getElementById("category-container").classList.add("hidden");
+  } else {
+    document.getElementById("category-container").classList.remove("hidden");
+    document.getElementById("spinner").classList.add("hidden");
+  }
+};
 // category load
 const loadCategory = () => {
   fetch("https://openapi.programming-hero.com/api/categories")
@@ -24,6 +34,8 @@ const removeActive = () => {
 };
 
 const loadCategoryPlant = (id) => {
+  // spinner
+  manageSpiner(true);
   // load trees
   const loadTrees = fetch(
     `https://openapi.programming-hero.com/api/category/${id}`
@@ -87,6 +99,7 @@ const displayTrees = (trees) => {
       addToCart();
     });
   }
+  manageSpiner(false);
 };
 
 // modal showing
