@@ -74,21 +74,74 @@
       <div class="hero-img-1 left-0 bottom-0">
         <img src="./assets/hero-leaf1.png" alt="" />
       </div>
-      <div class="contents-div text-center col-span-2 flex flex-col justify-center items-center">
-       
-          <h2 class="text-5xl font-bold">Plant a Tree, Grow a Future</h2>
-          <p class="text-lg my-3">
-            Join our mission to plant 1 million trees and make the Earth greener
-            for<br />future generations.
-          </p>
-          <button class="btn bg-[#FACC15] text-[#15803D] rounded-full">
-            Get Involved
-          </button>
-        
+      <div
+        class="contents-div text-center col-span-2 flex flex-col justify-center items-center"
+      >
+        <h2 class="text-5xl font-bold">Plant a Tree, Grow a Future</h2>
+        <p class="text-lg my-3">
+          Join our mission to plant 1 million trees and make the Earth greener
+          for<br />future generations.
+        </p>
+        <button class="btn bg-[#FACC15] text-[#15803D] rounded-full">
+          Get Involved
+        </button>
       </div>
       <div class="hero-img-2 right-0 bottom-0">
         <img src="./assets/hero-leaf2.png" alt="" />
       </div>
     </section>
+
+    <section
+      class="display-trees bg-[#f0fdf4] min-h-screen border-2 border-red-400"
+    >
+      <div class="p-16">
+        <h2 class="text-2xl font-semibold text-center">Choose Your Trees</h2>
+        <div class="grid grid-cols-12 gap-2">
+          <div class="categories col-span-2 border-2 border-red-400"></div>
+          <div class="cards border-2 col-span-8 border-red-400">
+            <div
+              id="card-container"
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+            >
+              <!-- <div class="card bg-base-100 w-96 shadow-sm flex flex-col gap-3">
+                <figure>
+                  <img
+                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                    alt="Shoes"
+                  />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">
+                    Mango Tree
+                  </h2>
+                  <p>
+                    A card component has a figure, a body part, and inside body
+                    there are title and actions parts
+                  </p>
+                  <div class="card-actions justify-between">
+                    <div class="badge rounded-full bg-[#DCFCE7] text-[#15803D]">Fashion</div>
+                    <div class="badge badge-outline"><p>৳<span>500</span></p></div>
+                  </div>
+                  <div><button class="bg-[#15803D] rounded-full text-white">Add to Cart</button></div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div
+            class="cart col-span-2 bg-white rounded-xl border-2 border-red-400"
+          >
+            <h2 class="text-2xl font-bold pt-2 ps-2">Your Cart</h2>
+            <div id="cart-container">
+              <div class="flex justify-between items-center p-2">
+                <h2 class="text-xl font-bold">Total</h2>
+                <h2 class="text-xl font-bold">৳<span id="total">000</span></h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./script/index.js"></script>
   </body>
 </html>
